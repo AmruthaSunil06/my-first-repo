@@ -1,0 +1,241 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Libre Baskerville", serif;
+}
+#container{
+ width: 100%;
+ height: 100vh;
+ position: relative;
+}
+#navbar{
+    display: flex;
+    width: 85%;
+    margin-left: 100px;
+    justify-content:space-between; /*horizontal movement */
+    align-items: center; /*vertical movement */
+
+}
+#logo{
+    width: 130px;
+}
+.listitem{
+    display:inline-block;
+    margin: 10px 20px;
+    list-style: none;
+}
+.listitem a{
+    color: black;
+    text-decoration: none;
+    font-weight: 800;
+     
+}
+a:hover{
+    color: red;
+}
+#title{
+    margin-top: 15%;
+    margin-left: 8%;
+}
+#title h1{
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.lastname{
+color: orange;
+}
+
+ #tittle p{
+ margin-bottom: 30px;
+ }
+ #download{
+   background-color: black;
+   color: white;
+   text-decoration: none;
+   padding: 10px;
+   border-radius: 8px;
+ }
+ #images{
+    width:40%;
+    height: 70%;
+    position:absolute;
+    right: 0px;
+    bottom: 0px;
+ }
+ .imagegroup{
+    position: absolute; 
+    height: 100%;
+    left:50%;
+    bottom: 0px;
+     transform: translateX(-50%);
+    transition:bottom 1s,left 2s; 
+ } 
+ #images:hover #shape{
+    bottom: 60px;
+}
+#images:hover #girl{
+left: 40px;
+}
+#about{
+    margin: 16% 8% 1% 8% ;
+
+}
+.heading{
+    text-align: center;
+}
+.heading h1{
+    font-size: 30px;
+}
+.heading span{
+    font-size: 20px;
+    color: green;
+}
+
+#about-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-top: 4rem;
+    column-gap: 2rem;
+
+}
+#about-image{
+    width: 80%;
+}
+ #details p{
+   font-size: 15px;
+   text-align: justify;
+} 
+#information{
+    font-size: 15px;
+    margin-top:2 rem;
+}
+.info{
+    margin: 1rem 0rem;
+}
+.info span{
+    margin-left: 1rem;
+}
+#skill{
+    margin: 9% 8% 0% 8%;
+}
+#a1{
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 2rem;
+}
+#a1 img{
+    width: 90%;
+  
+}
+.base{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0px;
+    margin-top: 15px;
+    position: relative;
+}
+.base span{
+    font-size: 20px;
+    font-weight: 700;
+}
+.bar{
+    width: 100%;
+    height: 0.5rem;
+    background-color: black;
+    border-radius: 0.2rem;
+    position: absolute;
+    bottom: 0px;
+
+}
+
+#html-bar{
+    width: 95%;
+    background-color: rgb(116, 84, 3);
+
+}
+#css-bar{
+    width: 88%;
+    background-color: rgb(116, 84, 3);
+
+}
+
+#js-bar{
+    width: 89%;
+    background-color: rgb(116, 84, 3);
+
+}
+#react-bar{
+    width: 85%;
+    background-color: rgb(116, 84, 3);
+
+}
+
+#contact{
+    margin-top: 100px;}
+
+#icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}   
+.icon ,.up-arrow {
+    width: 50px;
+    height: 50px;
+    margin: 20px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+    border-radius: 50px;
+}
+.icon a{
+    color: black;
+   
+}
+.icon:hover{
+    background-image: linear-gradient(to left top, hsl(65, 82%, 51%),orange);
+    color:white;
+    animation: shake 0.75s;
+}
+@keyframes shake{
+    10%{
+        transform: rotate(15deg);
+    }
+    20%{
+        transform: rotate(-15deg);
+    }
+    30%{
+        transform: rotate(15deg);
+    }
+    40%{
+        transform: rotate(-15deg);
+    }
+}
+.icon a:hover{
+    color: white;
+    
+}
+ 
+
+/* footer */
+footer{
+    margin:20px 0px;
+    text-align: center;
+}
+/* arrow icon */
+.up-arrow {
+    background-image: linear-gradient(to bottom right, yellow, orange, rgb(255, 102, 0));
+    float: right;
+    
+}
+ .up-arrow a:hover {
+   color: white;
+}  
+/* scroll behaviour */
+html{
+    scroll-behavior: smooth;
+}
